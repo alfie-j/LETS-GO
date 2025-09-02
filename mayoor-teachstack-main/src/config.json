@@ -1,0 +1,10 @@
+{
+  "appName": "TeachStack Dashboard",
+  "version": "1.0.0",
+  "apiBaseUrl": "/api",
+  "features": {
+    "faceRecognition": true,
+    "aiInsights": true,
+    "reportGeneration": true
+  }
+}

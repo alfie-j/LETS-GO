@@ -1,0 +1,180 @@
+import { Teacher, AttendanceRecord, PerformanceMetric } from "@/types";
+
+export const mockTeachers: Teacher[] = [
+  {
+    id: "T001",
+    name: "Alice Johnson",
+    email: "alice.j@teachstack.com",
+    faceRegistered: true,
+    lastLogin: "2024-07-29T08:30:00Z",
+    status: "active",
+  },
+  {
+    id: "T002",
+    name: "Bob Williams",
+    email: "bob.w@teachstack.com",
+    faceRegistered: false,
+    lastLogin: "2024-07-28T10:00:00Z",
+    status: "inactive",
+  },
+  {
+    id: "T003",
+    name: "Charlie Brown",
+    email: "charlie.b@teachstack.com",
+    faceRegistered: true,
+    lastLogin: "2024-07-29T09:00:00Z",
+    status: "active",
+  },
+  {
+    id: "T004",
+    name: "Diana Prince",
+    email: "diana.p@teachstack.com",
+    faceRegistered: true,
+    lastLogin: "2024-07-29T08:45:00Z",
+    status: "active",
+  },
+  {
+    id: "T005",
+    name: "Eve Adams",
+    email: "eve.a@teachstack.com",
+    faceRegistered: false,
+    lastLogin: "2024-07-27T11:00:00Z",
+    status: "active",
+  },
+];
+
+export const mockAttendance: AttendanceRecord[] = [
+  {
+    id: "A001",
+    teacherId: "T001",
+    date: "2024-07-29",
+    status: "present",
+    checkInTime: "08:00 AM",
+    checkOutTime: "04:00 PM",
+    method: "face",
+  },
+  {
+    id: "A002",
+    teacherId: "T002",
+    date: "2024-07-29",
+    status: "absent",
+    reason: "sick leave",
+    method: "manual",
+  },
+  {
+    id: "A003",
+    teacherId: "T003",
+    date: "2024-07-29",
+    status: "present",
+    checkInTime: "08:15 AM",
+    checkOutTime: "04:15 PM",
+    method: "otp",
+  },
+  {
+    id: "A004",
+    teacherId: "T004",
+    date: "2024-07-29",
+    status: "present",
+    checkInTime: "07:55 AM",
+    checkOutTime: "03:55 PM",
+    method: "face",
+  },
+  {
+    id: "A005",
+    teacherId: "T005",
+    date: "2024-07-29",
+    status: "present",
+    checkInTime: "08:30 AM",
+    checkOutTime: "04:30 PM",
+    method: "otp",
+  },
+  {
+    id: "A006",
+    teacherId: "T001",
+    date: "2024-07-28",
+    status: "present",
+    checkInTime: "08:05 AM",
+    checkOutTime: "04:05 PM",
+    method: "face",
+  },
+  {
+    id: "A007",
+    teacherId: "T002",
+    date: "2024-07-28",
+    status: "present",
+    checkInTime: "08:00 AM",
+    checkOutTime: "04:00 PM",
+    method: "otp",
+  },
+];
+
+export const mockPerformanceMetrics: PerformanceMetric[] = [
+  {
+    id: "P001",
+    teacherId: "T001",
+    date: "2024-07-29",
+    engagementScore: 92,
+    feedback: "Excellent class participation.",
+  },
+  {
+    id: "P002",
+    teacherId: "T002",
+    date: "2024-07-29",
+    engagementScore: 78,
+    feedback: "Needs to improve student interaction.",
+  },
+  {
+    id: "P003",
+    teacherId: "T003",
+    date: "2024-07-29",
+    engagementScore: 88,
+    feedback: "Good use of visual aids.",
+  },
+  {
+    id: "P004",
+    teacherId: "T004",
+    date: "2024-07-29",
+    engagementScore: 95,
+    feedback: "Outstanding lesson delivery.",
+  },
+  {
+    id: "P005",
+    teacherId: "T005",
+    date: "2024-07-29",
+    engagementScore: 80,
+    feedback: "Consistent performance.",
+  },
+];
+
+export const mockActivityLogs = [
+  {
+    id: "L001",
+    timestamp: "2024-07-29T10:30:00Z",
+    description: "John Doe checked in (Face Rec)",
+    type: "attendance",
+  },
+  {
+    id: "L002",
+    timestamp: "2024-07-29T09:15:00Z",
+    description: "Jane Smith marked absent",
+    type: "attendance",
+  },
+  {
+    id: "L003",
+    timestamp: "2024-07-29T08:00:00Z",
+    description: "System anomaly detected (High traffic)",
+    type: "system",
+  },
+  {
+    id: "L004",
+    timestamp: "2024-07-28T17:00:00Z",
+    description: "New teacher added: Alice Brown",
+    type: "teacher_management",
+  },
+  {
+    id: "L005",
+    timestamp: "2024-07-28T16:30:00Z",
+    description: "Performance report generated for July",
+    type: "report",
+  },
+];
